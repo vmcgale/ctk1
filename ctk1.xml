@@ -8,25 +8,11 @@
           </block>
         </value>
         <next>
-          <block type="movement_stutter" id="20">
+          <block type="movement_right" id="30">
             <next>
-              <block type="led_select" id="104" inline="true">
-                <field name="ACTION">FLASH</field>
-                <value name="LED">
-                  <block type="math_number" id="111">
-                    <field name="NUM">0</field>
-                  </block>
-                </value>
+              <block type="movement_reverse" id="40">
                 <next>
-                  <block type="movement_right" id="30">
-                    <next>
-                      <block type="movement_reverse" id="40">
-                        <next>
-                          <block type="movement_stop" id="50"></block>
-                        </next>
-                      </block>
-                    </next>
-                  </block>
+                  <block type="movement_stop" id="50"></block>
                 </next>
               </block>
             </next>
