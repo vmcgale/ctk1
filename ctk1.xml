@@ -26,11 +26,4 @@
       </block>
     </next>
   </block>
-  <block type="robot_delay" id="113" inline="true" x="218" y="360">
-    <value name="DELAY">
-      <block type="math_number" id="120">
-        <field name="NUM">1</field>
-      </block>
-    </value>
-  </block>
 </xml>
