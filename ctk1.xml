@@ -32,14 +32,5 @@
         </next>
       </block>
     </statement>
-    <next>
-      <block type="movement_leftmotor" id="176" inline="true">
-        <value name="MOVLEFT">
-          <block type="math_number" id="214">
-            <field name="NUM">50</field>
-          </block>
-        </value>
-      </block>
-    </next>
   </block>
 </xml>
