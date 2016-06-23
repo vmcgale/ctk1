@@ -1,21 +1,30 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="movement_forward" id="10" x="180" y="73">
     <next>
-      <block type="movement_stutter" id="20">
+      <block type="robot_delay" id="147" inline="true">
+        <value name="DELAY">
+          <block type="math_number" id="128">
+            <field name="NUM">6890</field>
+          </block>
+        </value>
         <next>
-          <block type="led_select" id="104" inline="true">
-            <field name="ACTION">FLASH</field>
-            <value name="LED">
-              <block type="math_number" id="111">
-                <field name="NUM">0</field>
-              </block>
-            </value>
+          <block type="movement_stutter" id="20">
             <next>
-              <block type="movement_right" id="30">
+              <block type="led_select" id="104" inline="true">
+                <field name="ACTION">FLASH</field>
+                <value name="LED">
+                  <block type="math_number" id="111">
+                    <field name="NUM">0</field>
+                  </block>
+                </value>
                 <next>
-                  <block type="movement_reverse" id="40">
+                  <block type="movement_right" id="30">
                     <next>
-                      <block type="movement_stop" id="50"></block>
+                      <block type="movement_reverse" id="40">
+                        <next>
+                          <block type="movement_stop" id="50"></block>
+                        </next>
+                      </block>
                     </next>
                   </block>
                 </next>
